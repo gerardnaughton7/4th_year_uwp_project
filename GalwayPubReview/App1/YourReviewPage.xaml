@@ -7,7 +7,34 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background= "Green">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Style="{StaticResource WhiteLogoStyle}"/>
+
+        <TextBlock Grid.Row="1" 
+                   Style="{StaticResource LabelTextBlockStyle}" 
+                   Text="Review"/>
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1" 
+                    Margin="50" >
+            <TextBlock Text="Write your Review." Style="{StaticResource LabelTextBlockStyle}" TextAlignment="Center"/>
+            <TextBlock  TextWrapping="Wrap" Text="Name: "/>
+            <TextBox x:Name="nameInput" TextWrapping="Wrap" />
+            <TextBlock  TextWrapping="Wrap" Text="Review " />
+            <TextBox x:Name="notesInput" TextWrapping="Wrap" />
+            <TextBlock TextAlignment="Center" x:Name="Warning" Foreground="Red" Text="All Fields must be entered!"/>
+            <Button Name="Submit_button" Click="Submit_button_Click" Background="Teal" Content="Submit Review"/>
+        </StackPanel>
 
     </Grid>
 </Page>

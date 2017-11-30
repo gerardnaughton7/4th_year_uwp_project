@@ -7,7 +7,37 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#3C1F19">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Style= "{StaticResource WhiteLogoStyle}" HorizontalAlignment="Left"/>
+        
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            
+            <Button Content="Pub" 
+                    Margin="10" 
+                    Foreground="White">
+                <Button.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem x:ConnectionId='2' Text="Pucan"                  />
+                        <MenuFlyoutItem x:ConnectionId='3' Text="McSwiggans"                   />
+                        <MenuFlyoutItem x:ConnectionId='4' Text="Cellar"                   />
+                    </MenuFlyout>
+                </Button.Flyout>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <TextBlock Text="Pub Selected:" Style="{StaticResource LabelTextBlockStyle}"/>
+            <TextBlock x:ConnectionId='1' Name="ResultTextBlock" Style="{StaticResource LabelTextBlockStyle}"/>
+        </StackPanel>
 
     </Grid>
 </Page>
