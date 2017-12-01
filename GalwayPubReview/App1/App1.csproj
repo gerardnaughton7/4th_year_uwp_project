@@ -105,6 +105,7 @@
     <Compile Include="RatingPage.xaml.cs">
       <DependentUpon>RatingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Review.cs" />
     <Compile Include="SelectPubPage.xaml.cs">
       <DependentUpon>SelectPubPage.xaml</DependentUpon>
     </Compile>

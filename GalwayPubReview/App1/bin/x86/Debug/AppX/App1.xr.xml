@@ -40,6 +40,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Flyout" />
+      <RootProperty Name="Background" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -72,8 +73,10 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="App1.MainPage" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="App1.PubReviewsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
       <RootProperty Name="Maximum" />
@@ -88,6 +91,10 @@
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="App1.SelectPubPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Height" />
+      <RootProperty Name="MaxLength" />
+    </RootType>
     <RootType FullName="App1.YourReviewPage" />
   </Roots.RootTypes>
 </Roots>

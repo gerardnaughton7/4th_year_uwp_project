@@ -13,7 +13,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace App1
 {
@@ -25,6 +24,7 @@ namespace App1
         public MainPage()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(SelectPubPage));
         }
 
         private void SelectPubButton_Click(object sender, RoutedEventArgs e)

@@ -26,5 +26,11 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void SubmitReview_button_Click(object sender, RoutedEventArgs e)
+        {
+            Review r = new Review(nameInput.Text, YourReview.Text);
+            this.Frame.Navigate(typeof(PubReviewsPage));
+        }
     }
 }

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-30T17:56:13.651</Modified>
+      <Modified>2017-12-01T16:24:16.262</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\App1.exe">
       <PackagePath>entrypoint\App1.exe</PackagePath>
-      <Modified>2017-11-30T17:56:12.933</Modified>
+      <Modified>2017-12-01T16:24:15.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -559,7 +559,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\App1.xr.xml">
       <PackagePath>App1.xr.xml</PackagePath>
-      <Modified>2017-11-30T17:48:16.789</Modified>
+      <Modified>2017-12-01T16:24:14.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -568,11 +568,11 @@
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-30T17:56:13.448</Modified>
+      <Modified>2017-12-01T16:24:15.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\Core\App1.exe">
       <PackagePath>App1.exe</PackagePath>
-      <Modified>2017-11-30T17:56:13.651</Modified>
+      <Modified>2017-12-01T16:24:16.254</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

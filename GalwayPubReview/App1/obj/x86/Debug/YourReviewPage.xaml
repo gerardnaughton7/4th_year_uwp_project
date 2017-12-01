@@ -10,20 +10,23 @@
     <Grid Background= "Green">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Image Style="{StaticResource WhiteLogoStyle}"/>
+        <Image Style="{StaticResource WhiteLogoStyle}" HorizontalAlignment="Left"/>
 
-        <TextBlock Grid.Row="1" 
-                   Style="{StaticResource LabelTextBlockStyle}" 
-                   Text="Beverage Rating:"/>
+        <StackPanel Grid.Row="1" 
+                    Margin="50" >
+            <TextBlock Text="Write your Review." Style="{StaticResource LabelTextBlockStyle}"/>
+            <TextBlock Text="Name: " Style="{StaticResource LabelTextBlockStyle}"/>
+            <TextBox x:ConnectionId='1' x:Name="nameInput" />
+            <TextBlock Style="{StaticResource LabelTextBlockStyle}" Text="Your Review " />
+            <TextBox x:ConnectionId='2' x:Name="YourReview" Height="200" MaxLength="300"/>
+            <Button x:ConnectionId='3' Name="SubmitReview_button"                                   Background="Black" Foreground="White" Margin="20,20,20,0" Content="Submit Review"/>
+        </StackPanel>
 
     </Grid>
 </Page>
