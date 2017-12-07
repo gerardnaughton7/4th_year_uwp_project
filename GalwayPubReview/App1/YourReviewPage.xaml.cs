@@ -60,8 +60,8 @@ namespace App1
                 var HttpContent = new StringContent(reviewJson);
                 HttpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
 
-                await client.PostAsync("http://localhost:63030/api/Reviews", HttpContent);
-                //await client.PostAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews", HttpContent);
+                //await client.PostAsync("http://localhost:63030/api/Reviews", HttpContent);
+                await client.PostAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews", HttpContent);
                 this.Frame.Navigate(typeof(PubReviewsPage));
 
                 GlobalVars._pub = null;
