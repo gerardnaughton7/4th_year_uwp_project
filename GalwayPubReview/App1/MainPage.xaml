@@ -18,7 +18,7 @@
         <Style TargetType="Image" x:Key="IconImageStyle">
             <Setter Property="Height" Value="20"/>
             <Setter Property="Width" Value="20"/>
-            <Setter Property="Margin" Value="0,0,10,0"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
     </Page.Resources>
 
@@ -36,43 +36,47 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Name="SelectPubButton"
-                    Click="SelectPubButton_Click"
+            <Button Name="PubReviewsButton" 
+                    Click="PubReviewsButton_Click"
                     Grid.Column="0" 
                     Style="{StaticResource NavigationButtonStyle}">
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Assets/list-icon.png" Style="{StaticResource IconImageStyle}"/>
+                    <TextBlock Text="Pub" Foreground="White" TextAlignment="Center"/>
+                    <TextBlock Text="Reviews" Foreground="White"  TextAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Name="SelectPubButton"
+                    Click="SelectPubButton_Click"
+                    Grid.Column="1" 
+                    Style="{StaticResource NavigationButtonStyle}">
+                <StackPanel Orientation="Vertical">
                     <Image Source="Assets/pint-icon.png" Style="{StaticResource IconImageStyle}"/>
-                    <TextBlock Text="Select Pub" Foreground="White"/>
+                    <TextBlock Text="Step 1:" Foreground="White" TextAlignment="Center"/>
+                    <TextBlock Text="Select Pub" Foreground="White" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
 
             <Button Name="RatingButton" 
                     Click="RatingButton_Click"
-                    Grid.Column="1" 
+                    Grid.Column="2" 
                     Style="{StaticResource NavigationButtonStyle}">
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
                     <Image Source="Assets/rating-icon.png" Style="{StaticResource IconImageStyle}"/>
-                    <TextBlock Text="Rating" Foreground="White"/>
+                    <TextBlock Text="Step 2:" Foreground="White" TextAlignment="Center"/>
+                    <TextBlock Text="Rating" Foreground="White" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
 
             <Button Name="YourReviewButton" 
                     Click="YourReviewButton_Click"
-                    Grid.Column="2" 
-                    Style="{StaticResource NavigationButtonStyle}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Assets/person-icon.png" Style="{StaticResource IconImageStyle}"/>
-                    <TextBlock Text="Your Review" Foreground="White"/>
-                </StackPanel>
-            </Button>
-
-            <Button Name="PubReviewsButton" 
-                    Click="PubReviewsButton_Click"
                     Grid.Column="3" 
                     Style="{StaticResource NavigationButtonStyle}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Assets/list-icon.png" Style="{StaticResource IconImageStyle}"/>
-                    <TextBlock Text="Pub Reviews" Foreground="White"/>
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Assets/person-icon.png" Style="{StaticResource IconImageStyle}"/>
+                    <TextBlock Text="Step 3:" Foreground="White" TextAlignment="Center"/>
+                    <TextBlock Text="Your Review" Foreground="White" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
         </Grid>

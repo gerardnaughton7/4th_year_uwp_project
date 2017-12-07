@@ -6,38 +6,62 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="MenuFlyoutPresenter" x:Key="MFStyle">
+            <Setter Property="Background" Value="BurlyWood" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="MaxHeight" Value="150" />
+        </Style>
+    </Page.Resources>
+    <ScrollViewer>
+        <Grid Background="#3C1F19">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-    <Grid Background="#3C1F19">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+            <Image Style= "{StaticResource WhiteLogoStyle}" HorizontalAlignment="Left"/>
 
-        <Image Style= "{StaticResource WhiteLogoStyle}" HorizontalAlignment="Left"/>
-        
-        <StackPanel Grid.Row="1"
-                    Orientation="Horizontal"
-                    HorizontalAlignment="Center">
-            
-            <Button Content="Pub" 
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,50,0,0">
+                <TextBlock Text="Select Pub: " Style="{StaticResource LabelTextBlockStyle}"/>
+
+                <Button Content="Pub" 
                     Margin="10" 
-                    Foreground="White">
-                <Button.Flyout>
-                    <MenuFlyout>
-                        <MenuFlyoutItem Text="Pucan" Click="Pub_Click"/>
-                        <MenuFlyoutItem Text="McSwiggans" Click="Pub_Click" />
-                        <MenuFlyoutItem Text="Cellar" Click="Pub_Click" />
-                    </MenuFlyout>
-                </Button.Flyout>
-            </Button>
-        </StackPanel>
+                    Foreground="White"
+                    >
+                    <Button.Flyout>
+                        <MenuFlyout Placement="Bottom" MenuFlyoutPresenterStyle="{StaticResource MFStyle}">
+                            <MenuFlyoutItem Text="Pucan" Click="Pub_Click"/>
+                            <MenuFlyoutItem Text="McSwiggans" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="Cellar" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="Seven" Click="Pub_Click"/>
+                            <MenuFlyoutItem Text="Quays" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="Dail" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="Skeffington" Click="Pub_Click"/>
+                            <MenuFlyoutItem Text="Garveys" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="Murty Rabbits" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="Garavans" Click="Pub_Click"/>
+                            <MenuFlyoutItem Text="Taafes" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="Tig Coli" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="Dew Drop" Click="Pub_Click"/>
+                            <MenuFlyoutItem Text="Bunch of Grapes" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="1520" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="Blakes" Click="Pub_Click"/>
+                            <MenuFlyoutItem Text="Front Door" Click="Pub_Click" />
+                            <MenuFlyoutItem Text="Buskers" Click="Pub_Click" />
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+            </StackPanel>
 
-        <StackPanel Grid.Row="2" Orientation="Horizontal">
-            <TextBlock Text="Pub Selected:" Style="{StaticResource LabelTextBlockStyle}"/>
-            <TextBlock Name="ResultTextBlock" Style="{StaticResource LabelTextBlockStyle}"/>
-        </StackPanel>
-
-    </Grid>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,50,0,50">
+                <TextBlock Text="Select Pub: " Style="{StaticResource LabelTextBlockStyle}"/>
+                <TextBlock Name="ResultTextBlock" Style="{StaticResource LabelTextBlockStyle}"/>
+            </StackPanel>
+            <Button Grid.Row="3" HorizontalAlignment="Center" x:Name="Step1" Content="Next Step" Background="Black" Foreground="White" Click="Step1_Click"/>
+        </Grid>
+    </ScrollViewer>
 </Page>

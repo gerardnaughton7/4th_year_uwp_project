@@ -26,5 +26,37 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void Bev_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            Slider slider = sender as Slider;
+            if (slider != null)
+            {
+                GlobalVars._bRate = (int)slider.Value;
+            }
+        }
+
+        private void Atmos_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            Slider slider = sender as Slider;
+            if (slider != null)
+            {
+                GlobalVars._aRate = (int)slider.Value;
+            }
+        }
+
+        private void Craic_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            Slider slider = sender as Slider;
+            if (slider != null)
+            {
+                GlobalVars._cRate = (int)slider.Value;
+            }
+        }
+
+        private void Step2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(YourReviewPage));
+        }
     }
 }

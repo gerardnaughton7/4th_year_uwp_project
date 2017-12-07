@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +27,15 @@ namespace App1
         public PubReviewsPage()
         {
             this.InitializeComponent();
+        }
+
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        {
+            HttpClient client = new HttpClient();
+            var JsonResponse = await client.GetStringAsync("http://localhost:63030/api/Reviews");
+            //var JsonResponse = await client.GetStringAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews");
+            var reviewResult = JsonConvert.DeserializeObject<List<Review>>(JsonResponse);
+           reviewList.ItemsSource = reviewResult;
         }
     }
 }

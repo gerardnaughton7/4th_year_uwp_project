@@ -6,39 +6,63 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="MenuFlyoutPresenter" x:Key="MFStyle">
+            <Setter Property="Background" Value="BurlyWood" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="MaxHeight" Value="150" />
+        </Style>
+    </Page.Resources>
+    <ScrollViewer>
+        <Grid Background="#3C1F19">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-    <Grid Background="#3C1F19">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+            <Image Style= "{StaticResource WhiteLogoStyle}" HorizontalAlignment="Left"/>
 
-        <Image Style= "{StaticResource WhiteLogoStyle}" HorizontalAlignment="Left"/>
-        
-        <StackPanel Grid.Row="1"
-                    Orientation="Horizontal"
-                    HorizontalAlignment="Center">
-            
-            <Button Content="Pub" 
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,50,0,0">
+                <TextBlock Text="Select Pub: " Style="{StaticResource LabelTextBlockStyle}"/>
+
+                <Button Content="Pub" 
                     Margin="10" 
-                    Foreground="White">
-                <Button.Flyout>
-                    <MenuFlyout>
-                        <MenuFlyoutItem x:ConnectionId='2' Text="Pucan"                  />
-                        <MenuFlyoutItem x:ConnectionId='3' Text="McSwiggans"                   />
-                        <MenuFlyoutItem x:ConnectionId='4' Text="Cellar"                   />
-                    </MenuFlyout>
-                </Button.Flyout>
-            </Button>
-        </StackPanel>
+                    Foreground="White"
+                    >
+                    <Button.Flyout>
+                        <MenuFlyout Placement="Bottom" MenuFlyoutPresenterStyle="{StaticResource MFStyle}">
+                            <MenuFlyoutItem x:ConnectionId='3' Text="Pucan"                  />
+                            <MenuFlyoutItem x:ConnectionId='4' Text="McSwiggans"                   />
+                            <MenuFlyoutItem x:ConnectionId='5' Text="Cellar"                   />
+                            <MenuFlyoutItem x:ConnectionId='6' Text="Seven"                  />
+                            <MenuFlyoutItem x:ConnectionId='7' Text="Quays"                   />
+                            <MenuFlyoutItem x:ConnectionId='8' Text="Dail"                   />
+                            <MenuFlyoutItem x:ConnectionId='9' Text="Skeffington"                  />
+                            <MenuFlyoutItem x:ConnectionId='10' Text="Garveys"                   />
+                            <MenuFlyoutItem x:ConnectionId='11' Text="Murty Rabbits"                   />
+                            <MenuFlyoutItem x:ConnectionId='12' Text="Garavans"                  />
+                            <MenuFlyoutItem x:ConnectionId='13' Text="Taafes"                   />
+                            <MenuFlyoutItem x:ConnectionId='14' Text="Tig Coli"                   />
+                            <MenuFlyoutItem x:ConnectionId='15' Text="Dew Drop"                  />
+                            <MenuFlyoutItem x:ConnectionId='16' Text="Bunch of Grapes"                   />
+                            <MenuFlyoutItem x:ConnectionId='17' Text="1520"                   />
+                            <MenuFlyoutItem x:ConnectionId='18' Text="Blakes"                  />
+                            <MenuFlyoutItem x:ConnectionId='19' Text="Front Door"                   />
+                            <MenuFlyoutItem x:ConnectionId='20' Text="Buskers"                   />
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+            </StackPanel>
 
-        <StackPanel Grid.Row="2" Orientation="Horizontal">
-            <TextBlock Text="Pub Selected:" Style="{StaticResource LabelTextBlockStyle}"/>
-            <TextBlock x:ConnectionId='1' Name="ResultTextBlock" Style="{StaticResource LabelTextBlockStyle}"/>
-        </StackPanel>
-
-    </Grid>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,50,0,50">
+                <TextBlock Text="Select Pub: " Style="{StaticResource LabelTextBlockStyle}"/>
+                <TextBlock x:ConnectionId='2' Name="ResultTextBlock" Style="{StaticResource LabelTextBlockStyle}"/>
+            </StackPanel>
+            <Button x:ConnectionId='1' Grid.Row="3" HorizontalAlignment="Center" x:Name="Step1" Content="Next Step" Background="Black" Foreground="White"                    />
+        </Grid>
+    </ScrollViewer>
 </Page>
 

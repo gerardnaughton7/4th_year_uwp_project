@@ -18,7 +18,7 @@
         <Style TargetType="Image" x:Key="IconImageStyle">
             <Setter Property="Height" Value="20"/>
             <Setter Property="Width" Value="20"/>
-            <Setter Property="Margin" Value="0,0,10,0"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
     </Page.Resources>
 
@@ -36,43 +36,47 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button x:ConnectionId='2' Name="SelectPubButton"
-                                                 
+            <Button x:ConnectionId='2' Name="PubReviewsButton" 
+                                                  
                     Grid.Column="0" 
                     Style="{StaticResource NavigationButtonStyle}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Assets/pint-icon.png" Style="{StaticResource IconImageStyle}"/>
-                    <TextBlock Text="Select Pub" Foreground="White"/>
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Assets/list-icon.png" Style="{StaticResource IconImageStyle}"/>
+                    <TextBlock Text="Pub" Foreground="White" TextAlignment="Center"/>
+                    <TextBlock Text="Reviews" Foreground="White"  TextAlignment="Center"/>
                 </StackPanel>
             </Button>
 
-            <Button x:ConnectionId='3' Name="RatingButton" 
-                                              
+            <Button x:ConnectionId='3' Name="SelectPubButton"
+                                                 
                     Grid.Column="1" 
                     Style="{StaticResource NavigationButtonStyle}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Assets/rating-icon.png" Style="{StaticResource IconImageStyle}"/>
-                    <TextBlock Text="Rating" Foreground="White"/>
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Assets/pint-icon.png" Style="{StaticResource IconImageStyle}"/>
+                    <TextBlock Text="Step 1:" Foreground="White" TextAlignment="Center"/>
+                    <TextBlock Text="Select Pub" Foreground="White" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
 
-            <Button x:ConnectionId='4' Name="YourReviewButton" 
-                                                  
+            <Button x:ConnectionId='4' Name="RatingButton" 
+                                              
                     Grid.Column="2" 
                     Style="{StaticResource NavigationButtonStyle}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Assets/person-icon.png" Style="{StaticResource IconImageStyle}"/>
-                    <TextBlock Text="Your Review" Foreground="White"/>
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Assets/rating-icon.png" Style="{StaticResource IconImageStyle}"/>
+                    <TextBlock Text="Step 2:" Foreground="White" TextAlignment="Center"/>
+                    <TextBlock Text="Rating" Foreground="White" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
 
-            <Button x:ConnectionId='5' Name="PubReviewsButton" 
+            <Button x:ConnectionId='5' Name="YourReviewButton" 
                                                   
                     Grid.Column="3" 
                     Style="{StaticResource NavigationButtonStyle}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Assets/list-icon.png" Style="{StaticResource IconImageStyle}"/>
-                    <TextBlock Text="Pub Reviews" Foreground="White"/>
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Assets/person-icon.png" Style="{StaticResource IconImageStyle}"/>
+                    <TextBlock Text="Step 3:" Foreground="White" TextAlignment="Center"/>
+                    <TextBlock Text="Your Review" Foreground="White" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
         </Grid>

@@ -24,7 +24,12 @@ namespace App1
         public MainPage()
         {
             this.InitializeComponent();
-            MyFrame.Navigate(typeof(SelectPubPage));
+            MyFrame.Navigate(typeof(PubReviewsPage));
+        }
+
+    private void PubReviewsButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(PubReviewsPage));
         }
 
         private void SelectPubButton_Click(object sender, RoutedEventArgs e)
@@ -40,11 +45,6 @@ namespace App1
         private void YourReviewButton_Click(object sender, RoutedEventArgs e)
         {
             MyFrame.Navigate(typeof(YourReviewPage));
-        }
-
-        private void PubReviewsButton_Click(object sender, RoutedEventArgs e)
-        {
-            MyFrame.Navigate(typeof(PubReviewsPage));
         }
     }
 }

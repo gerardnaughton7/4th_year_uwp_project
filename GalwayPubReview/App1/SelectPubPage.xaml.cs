@@ -22,7 +22,6 @@ namespace App1
     /// </summary>
     public sealed partial class SelectPubPage : Page
     {
-        private String _pub;
 
         public SelectPubPage()
         {
@@ -32,19 +31,25 @@ namespace App1
         //Use f12 to create click stub
         private void Pub_Click(object sender, RoutedEventArgs e)
         {
+
             var selected = (MenuFlyoutItem)sender;
-            _pub = selected.Text;
+            GlobalVars._pub = selected.Text;
             displayResult();
         }
 
         private void displayResult()
         {   
-            if(string.IsNullOrEmpty(_pub))
+            if(string.IsNullOrEmpty(GlobalVars._pub))
             {
                 ResultTextBlock.Text = "No Pub Selected";
                 return;
             }
-            ResultTextBlock.Text = _pub;
+            ResultTextBlock.Text = GlobalVars._pub;
+        }
+
+        private void Step1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(RatingPage));
         }
     }
 }

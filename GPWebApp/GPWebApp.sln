@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPReview", "..\GalwayPubReview\App1\GPReview.csproj", "{C1F616A1-BF7E-488A-B704-C223FF0C8617}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Debug|ARM.Build.0 = Debug|ARM
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Debug|ARM.Deploy.0 = Debug|ARM
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Debug|x64.ActiveCfg = Debug|x64
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Debug|x64.Build.0 = Debug|x64
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Debug|x64.Deploy.0 = Debug|x64
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Debug|x86.ActiveCfg = Debug|x86
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Debug|x86.Build.0 = Debug|x86
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Debug|x86.Deploy.0 = Debug|x86
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Release|Any CPU.ActiveCfg = Release|x86
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Release|ARM.ActiveCfg = Release|ARM
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Release|ARM.Build.0 = Release|ARM
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Release|ARM.Deploy.0 = Release|ARM
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Release|x64.ActiveCfg = Release|x64
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Release|x64.Build.0 = Release|x64
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Release|x64.Deploy.0 = Release|x64
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Release|x86.ActiveCfg = Release|x86
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Release|x86.Build.0 = Release|x86
+		{C1F616A1-BF7E-488A-B704-C223FF0C8617}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D055B9D-8E1D-422D-9A98-28EDD01FEE8A}
+	EndGlobalSection
+EndGlobal
