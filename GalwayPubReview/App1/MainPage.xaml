@@ -36,7 +36,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Name="PubReviewsButton" 
+            <Button Name="PubReviewsButton"
                     Click="PubReviewsButton_Click"
                     Grid.Column="0" 
                     Style="{StaticResource NavigationButtonStyle}">

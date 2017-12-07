@@ -24,7 +24,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Image Style="{StaticResource WhiteLogoStyle}" HorizontalAlignment="Left"/>
+            <Image Style="{StaticResource WhiteLogoStyle}" HorizontalAlignment="Center"/>
 
             <StackPanel Grid.Row="1" 
                         Margin="20">
@@ -34,7 +34,7 @@
                 <TextBlock Style="{StaticResource tbStyle}" Text="Your Review " />
                 <TextBox x:ConnectionId='3' x:Name="ReviewTb" PlaceholderText ="Enter Your Review" Height="150" MaxLength="300" TextWrapping="Wrap"/>
                 <TextBlock x:ConnectionId='4' Name="WarningTextBlock" Foreground="Red" TextAlignment="Center" TextWrapping="Wrap" FontWeight="Bold"/>
-                <Button x:ConnectionId='5' Name="SubmitReview_button"                                   Background="Black" Foreground="White" Margin="20,20,20,0" Content="Submit Review"/>
+                <Button x:ConnectionId='5' Name="SubmitReview_button"                                   HorizontalAlignment="Center"  Background="Black" Foreground="White" Margin="20,20,20,0" Content="Submit Review"/>
             </StackPanel>
         </Grid>
     </ScrollViewer>

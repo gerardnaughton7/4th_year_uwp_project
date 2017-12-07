@@ -123,10 +123,10 @@
   <ItemGroup>
     <Content Include="Assets\background3.jpg" />
     <Content Include="Assets\list-icon.png" />
+    <Content Include="Assets\bearlogo.png" />
     <Content Include="Assets\person-icon.png" />
     <Content Include="Assets\pint-icon.png" />
     <Content Include="Assets\rating-icon.png" />
-    <Content Include="Assets\white-logo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

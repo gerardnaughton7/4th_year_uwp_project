@@ -23,7 +23,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Image Style= "{StaticResource WhiteLogoStyle}" HorizontalAlignment="Left"/>
+            <Image Style= "{StaticResource WhiteLogoStyle}" HorizontalAlignment="Center"/>
 
             <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,50,0,0">
                 <TextBlock Text="Select Pub: " Style="{StaticResource LabelTextBlockStyle}"/>
@@ -58,7 +58,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,50,0,50">
-                <TextBlock Text="Select Pub: " Style="{StaticResource LabelTextBlockStyle}"/>
+                <TextBlock Text="Selected Pub: " Style="{StaticResource LabelTextBlockStyle}"/>
                 <TextBlock x:ConnectionId='2' Name="ResultTextBlock" Style="{StaticResource LabelTextBlockStyle}"/>
             </StackPanel>
             <Button x:ConnectionId='1' Grid.Row="3" HorizontalAlignment="Center" x:Name="Step1" Content="Next Step" Background="Black" Foreground="White"                    />

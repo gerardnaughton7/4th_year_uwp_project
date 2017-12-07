@@ -6,8 +6,9 @@
     RequestedTheme="Light">
     <Application.Resources>
         <Style TargetType="Image" x:Key="WhiteLogoStyle">
-            <Setter Property="Source" Value="Assets/white-logo.png"/>
-            <Setter Property="Width" Value="150"/>
+            <Setter Property="Source" Value="Assets/bearlogo.png"/>
+            <Setter Property="Width" Value="125"/>
+            <Setter Property="Height" Value="125"/>
             <Setter Property="Margin" Value="20,20,20,0"/>
         </Style>
         <Style TargetType="TextBlock" x:Key="LabelTextBlockStyle">

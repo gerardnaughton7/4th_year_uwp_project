@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Diagnostics;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -27,15 +28,66 @@ namespace App1
         public PubReviewsPage()
         {
             this.InitializeComponent();
+
         }
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             HttpClient client = new HttpClient();
-            //var JsonResponse = await client.GetStringAsync("http://localhost:63030/api/Reviews");
-            var JsonResponse = await client.GetStringAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews");
+            var JsonResponse = await client.GetStringAsync("http://localhost:63030/api/Reviews");
+            //var JsonResponse = await client.GetStringAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews");
             var reviewResult = JsonConvert.DeserializeObject<List<Review>>(JsonResponse);
            reviewList.ItemsSource = reviewResult;
+        }
+
+        private void SearchBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        {
+            SearchQuery(args.QueryText);
+        }
+
+        private async void SearchQuery(string queryText)
+        {
+            Debug.WriteLine(queryText);
+            HttpClient client = new HttpClient();
+            var JsonResponse = await client.GetStringAsync("http://localhost:63030/api/Reviews");
+            //var JsonResponse = await client.GetStringAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews");
+            var reviewResult = JsonConvert.DeserializeObject<List<Review>>(JsonResponse);
+            bool match = false;
+            List<Review> searchResult = new List<Review>();
+            foreach (var r in reviewResult)
+            {
+                if(r.Pub.ToLower() == queryText.ToLower())
+                {
+                    searchResult.Add(r);
+                    match = true;
+                }
+            }
+
+            if(match == true)
+            {
+                searchList.Visibility = Visibility.Visible;
+                reviewList.Visibility = Visibility.Collapsed;
+                searchList.ItemsSource = searchResult;
+            }
+            else
+            {
+                errorMessage.Visibility = Visibility.Visible;
+            }
+
+        }
+
+        private void SearchBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        {
+            if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+            {
+                if (sender.Text.Length < 1)
+                {
+                    //load_data();
+                    searchList.Visibility = Visibility.Collapsed;
+                    reviewList.Visibility = Visibility.Visible;
+                    errorMessage.Visibility = Visibility.Collapsed;
+                }
+            }
         }
     }
 }
