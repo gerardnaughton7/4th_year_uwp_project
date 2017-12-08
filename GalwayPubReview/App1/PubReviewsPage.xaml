@@ -23,6 +23,9 @@
                         PlaceholderText="Search by Pub" 
                         HorizontalAlignment="Right" 
                         Grid.Row="0"
+                        BorderBrush="black"
+                        Background="Orange"
+                        Foreground="White"
                         Width="150"
                         TextChanged="SearchBox_TextChanged"
                         QuerySubmitted="SearchBox_QuerySubmitted"/>

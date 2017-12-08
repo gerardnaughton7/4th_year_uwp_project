@@ -28,7 +28,9 @@
             <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,50,0,0">
                 <TextBlock Text="Select Pub: " Style="{StaticResource LabelTextBlockStyle}"/>
 
-                <Button Content="Pub" 
+                <Button Content="Pub"
+                    Background="Black"
+                    Width="90"
                     Margin="10" 
                     Foreground="White"
                     >

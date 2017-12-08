@@ -47,5 +47,9 @@ namespace App1
             MyFrame.Navigate(typeof(YourReviewPage));
         }
 
+        private void MyFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

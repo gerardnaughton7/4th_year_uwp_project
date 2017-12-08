@@ -37,7 +37,8 @@ namespace App1
             var JsonResponse = await client.GetStringAsync("http://localhost:63030/api/Reviews");
             //var JsonResponse = await client.GetStringAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews");
             var reviewResult = JsonConvert.DeserializeObject<List<Review>>(JsonResponse);
-           reviewList.ItemsSource = reviewResult;
+            reviewResult.Reverse();
+            reviewList.ItemsSource = reviewResult;
         }
 
         private void SearchBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)

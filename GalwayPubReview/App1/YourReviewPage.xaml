@@ -34,7 +34,7 @@
                 <TextBlock Style="{StaticResource tbStyle}" Text="Your Review " />
                 <TextBox x:Name="ReviewTb" PlaceholderText ="Enter Your Review" Height="150" MaxLength="300" TextWrapping="Wrap"/>
                 <TextBlock Name="WarningTextBlock" Foreground="Red" TextAlignment="Center" TextWrapping="Wrap" FontWeight="Bold"/>
-                <Button Name="SubmitReview_button" Click="SubmitReview_button_Click" HorizontalAlignment="Center"  Background="Black" Foreground="White" Margin="20,20,20,0" Content="Submit Review"/>
+                <Button Name="SubmitReview_button" Click="SubmitReview_button_Click" HorizontalAlignment="Center"  Background="Black" Foreground="White" Margin="20,10,20,0" Content="Submit Review"/>
             </StackPanel>
         </Grid>
     </ScrollViewer>

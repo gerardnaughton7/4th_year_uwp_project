@@ -58,8 +58,10 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Flyout" />
+      <RootProperty Name="Padding" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -103,6 +105,9 @@
       <RootProperty Name="QueryIcon" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Width" />
       <RootEvent Name="TextChanged" />
       <RootEvent Name="QuerySubmitted" />
