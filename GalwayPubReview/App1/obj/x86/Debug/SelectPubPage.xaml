@@ -12,6 +12,11 @@
             <Setter Property="Foreground" Value="White" />
             <Setter Property="MaxHeight" Value="150" />
         </Style>
+        <Style TargetType="TextBlock" x:Key="TextBlockStyle">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="20,20,20,0"/>
+        </Style>
     </Page.Resources>
     <ScrollViewer>
         <Grid Background="#3C1F19">
@@ -23,10 +28,10 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Image Style= "{StaticResource WhiteLogoStyle}" HorizontalAlignment="Center"/>
+            <Image Style= "{StaticResource LogoStyle}" HorizontalAlignment="Center"/>
 
             <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,50,0,0">
-                <TextBlock Text="Select Pub: " Style="{StaticResource LabelTextBlockStyle}"/>
+                <TextBlock Text="Select Pub: " Style="{StaticResource TextBlockStyle}"/>
 
                 <Button Content="Pub"
                     Background="Black"
@@ -60,10 +65,14 @@
             </StackPanel>
 
             <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,50,0,50">
-                <TextBlock Text="Selected Pub: " Style="{StaticResource LabelTextBlockStyle}"/>
-                <TextBlock x:ConnectionId='2' Name="ResultTextBlock" Style="{StaticResource LabelTextBlockStyle}"/>
+                <TextBlock Text="Selected Pub: " Style="{StaticResource TextBlockStyle}"/>
+                <TextBlock x:ConnectionId='2' Name="ResultTextBlock" Style="{StaticResource TextBlockStyle}"/>
             </StackPanel>
-            <Button x:ConnectionId='1' Grid.Row="3" HorizontalAlignment="Center" x:Name="Step1" Content="Next Step" Background="Black" Foreground="White"                    />
+            <Button x:ConnectionId='1' Grid.Row="3"
+                    x:Name="Step1" 
+                    Content="Next Step" 
+                    Style="{StaticResource BlackButtonStyle}"
+                                       />
         </Grid>
     </ScrollViewer>
 </Page>

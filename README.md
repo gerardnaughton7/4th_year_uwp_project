@@ -38,8 +38,15 @@ The page includes:
 
 ## What is a UWP App?
 
+UWP stand for Universal Windows Platform. It provides a common app platform for array device that run windows 10. Ranging from desktop, laptop, phone, tablet and other smaller devices. This platform allows you to create a single app package which can be deployed on different devices. It also allows to target single devices out and uniquely custom them to that device properties.
+
 ## What is Azure?
+
+Azure is a comprehensive set of cloud services that developers and IT professionals use to build, deploy, and manage applications through our global network of datacenters. Integrated tools, DevOps, and a marketplace support you in efficiently building anything from simple mobile apps to internet-scale solutions. For my UWP application i use a Azure cloud service to host a mysql database to store my users reviews.
 
 ## Learning Curve
 
+I Learned a great deal on this project. Especially with cross platform design and how a well thought out project can help. Using grids and visual state manager it allows you to use your application over a wide array of devices with a better user interface. Also this was my first time working with azure. I used Azure cloud service to host a mysql database with a table for holding my users reviews. As with a every new technology it took a while to get use too but quickly learned  
+
+## References
 

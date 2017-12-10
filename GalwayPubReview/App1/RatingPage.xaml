@@ -6,7 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="TextBlockStyle">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="20,20,20,0"/>
+        </Style>
+    </Page.Resources>
     <ScrollViewer>
         <Grid Background ="Red">
             <Grid.RowDefinitions>
@@ -21,10 +27,10 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Image Style="{StaticResource WhiteLogoStyle}" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+            <Image Style="{StaticResource LogoStyle}" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
 
             <TextBlock Grid.Row="1" 
-                    Style="{StaticResource LabelTextBlockStyle}" 
+                    Style="{StaticResource TextBlockStyle}" 
                     Text="Beverage Rating:"/>
 
             <Slider x:Name="Bev"
@@ -35,7 +41,7 @@
                 ValueChanged="Bev_ValueChanged"/>
 
             <TextBlock Grid.Row="2" 
-                    Style="{StaticResource LabelTextBlockStyle}"
+                    Style="{StaticResource TextBlockStyle}"
                     Text="Atmosphere Rating:"/>
 
             <Slider x:Name="Atmos"
@@ -46,7 +52,7 @@
                 ValueChanged="Atmos_ValueChanged"/>
 
             <TextBlock Grid.Row="3" 
-                    Style="{StaticResource LabelTextBlockStyle}" 
+                    Style="{StaticResource TextBlockStyle}" 
                     Text="Craic Rating" />
 
             <Slider x:Name="Craic"
@@ -56,7 +62,12 @@
                 Margin="20,20,20,0"
                 ValueChanged="Craic_ValueChanged"/>
             
-            <Button Grid.Row="4" Grid.ColumnSpan="2"  HorizontalAlignment="Center" x:Name="Step2" Content="Next Step" Background="Black" Foreground="White" Click="Step2_Click"/>
+            <Button Grid.Row="4" 
+                    Grid.ColumnSpan="2"  
+                    Style="{StaticResource BlackButtonStyle}" 
+                    x:Name="Step2" 
+                    Content="Next Step"
+                    Click="Step2_Click"/>
         </Grid>
     </ScrollViewer>
 </Page>

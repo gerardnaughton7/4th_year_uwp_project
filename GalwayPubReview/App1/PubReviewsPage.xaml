@@ -9,6 +9,8 @@
     <Page.Resources>
         <Style TargetType="TextBlock" x:Key="tbStyle">
             <Setter Property="Foreground" Value="White"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
         </Style>
     </Page.Resources>
     <Grid Background="DarkOrange">
@@ -18,6 +20,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
         <AutoSuggestBox Name="SearchBox" 
                         QueryIcon="Filter" 
                         PlaceholderText="Search by Pub" 
@@ -30,9 +33,27 @@
                         TextChanged="SearchBox_TextChanged"
                         QuerySubmitted="SearchBox_QuerySubmitted"/>
         
-        <TextBlock Grid.Row="1" Text="Reviews" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Margin="5,0,0,0" Style="{StaticResource tbStyle}" />
-        <TextBlock Grid.Row="2" Visibility="Collapsed" Name="errorMessage" Foreground="White" Text="No pub matching that search. Try again!" HorizontalAlignment="Center" Margin="5,0,0,0"  />
-        <ListBox Grid.Row="3" x:Name="reviewList" Margin="20,20,20,20" Background="Orange" Width="Auto">
+        <TextBlock Grid.Row="1"
+                   Text="Reviews" 
+                   HorizontalAlignment="Center" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   Margin="5,0,0,0" 
+                   Style="{StaticResource tbStyle}" />
+        <TextBlock Grid.Row="2" 
+                   Visibility="Collapsed" 
+                   Name="errorMessage" 
+                   Foreground="White" 
+                   Text="No pub reviews matching that search. Try again!" 
+                   HorizontalAlignment="Center" 
+                   Margin="5,0,0,0"  />
+        
+        <ListBox Grid.Row="3" 
+                 x:Name="reviewList" 
+                 Margin="20,20,20,20" 
+                 Background="Orange" 
+                 Width="Auto">
+            
             <ListBox.ItemTemplate>
                 <DataTemplate >
                     <Grid Margin="5,5,5,5">
@@ -48,16 +69,52 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="{Binding Pub}" FontWeight="Bold" Margin="5,0,0,0" Style="{StaticResource tbStyle}" />
-                        <TextBlock Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding YourReview}" Margin="5,0,0,0" Height="Auto" Width="auto" MaxWidth="450" TextWrapping="Wrap" Style="{StaticResource tbStyle}"/>
-                        <TextBlock Grid.Column="0" Grid.Row="2" Text="Beverage Rating:" Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                        <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding BevRating}" Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                        <TextBlock Grid.Column="0" Grid.Row="3" Text="Atmosphere Rating: " Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                        <TextBlock Grid.Column="1" Grid.Row="3" Text="{Binding AtmosRating}" Margin="5,5,0,0" Style="{StaticResource tbStyle}" />
-                        <TextBlock Grid.Column="0" Grid.Row="4" Text="Craic Rating: " Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                        <TextBlock Grid.Column="1" Grid.Row="4" Text="{Binding CraicRating}" Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                        <TextBlock Grid.Column="0" Grid.Row="5" Text="Review Author: " Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                        <TextBlock Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="{Binding Name}" Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
+                        <TextBlock Text="{Binding Pub}" 
+                                   FontWeight="Bold" 
+                                   Margin="5,0,0,0" 
+                                   Style="{StaticResource tbStyle}" />
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="1" 
+                                   Grid.ColumnSpan="2" 
+                                   Text="{Binding YourReview}" 
+                                   Margin="5,0,0,0" 
+                                   Height="Auto" 
+                                   Width="auto" 
+                                   MaxWidth="450" 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="2" 
+                                   Text="Beverage Rating:" 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="1" 
+                                   Grid.Row="2" 
+                                   Text="{Binding BevRating}" 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="3" 
+                                   Text="Atmosphere Rating: " 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="1" 
+                                   Grid.Row="3" 
+                                   Text="{Binding AtmosRating}" 
+                                   Style="{StaticResource tbStyle}" />
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="4" 
+                                   Text="Craic Rating: " 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="1" 
+                                   Grid.Row="4" 
+                                   Text="{Binding CraicRating}" 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="5" 
+                                   Text="Review Author: " 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="1" 
+                                   Grid.Row="5" 
+                                   TextWrapping="Wrap" 
+                                   Text="{Binding Name}" 
+                                   Style="{StaticResource tbStyle}"/>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
@@ -65,31 +122,67 @@
         <ListBox Grid.Row="2" x:Name="searchList" Margin="20,20,20,20" Background="Orange" Width="Auto" Visibility="Collapsed">
                 <ListBox.ItemTemplate>
                     <DataTemplate >
-                        <Grid Margin="5,5,5,5">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <TextBlock Text="{Binding Pub}" FontWeight="Bold" Margin="5,0,0,0" Style="{StaticResource tbStyle}" />
-                            <TextBlock Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding YourReview}" Margin="5,0,0,0" Height="Auto" Width="auto" MaxWidth="450" TextWrapping="Wrap" Style="{StaticResource tbStyle}"/>
-                            <TextBlock Grid.Column="0" Grid.Row="2" Text="Beverage Rating:" Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                            <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding BevRating}" Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                            <TextBlock Grid.Column="0" Grid.Row="3" Text="Atmosphere Rating: " Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                            <TextBlock Grid.Column="1" Grid.Row="3" Text="{Binding AtmosRating}" Margin="5,5,0,0" Style="{StaticResource tbStyle}" />
-                            <TextBlock Grid.Column="0" Grid.Row="4" Text="Craic Rating: " Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                            <TextBlock Grid.Column="1" Grid.Row="4" Text="{Binding CraicRating}" Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                            <TextBlock Grid.Column="0" Grid.Row="5" Text="Review Author: " Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                            <TextBlock Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="{Binding Name}" Margin="5,5,0,0" Style="{StaticResource tbStyle}"/>
-                        </Grid>
-                    </DataTemplate>
+                    <Grid Margin="5,5,5,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Pub}" 
+                                   FontWeight="Bold" 
+                                   Margin="5,0,0,0" 
+                                   Style="{StaticResource tbStyle}" />
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="1" 
+                                   Grid.ColumnSpan="2" 
+                                   Text="{Binding YourReview}" 
+                                   Margin="5,0,0,0" 
+                                   Height="Auto" 
+                                   Width="auto" 
+                                   MaxWidth="450" 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="2" 
+                                   Text="Beverage Rating:" 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="1" 
+                                   Grid.Row="2" 
+                                   Text="{Binding BevRating}" 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="3" 
+                                   Text="Atmosphere Rating: " 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="1" 
+                                   Grid.Row="3" 
+                                   Text="{Binding AtmosRating}" 
+                                   Style="{StaticResource tbStyle}" />
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="4" 
+                                   Text="Craic Rating: " 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="1" 
+                                   Grid.Row="4" 
+                                   Text="{Binding CraicRating}" 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="0" 
+                                   Grid.Row="5" 
+                                   Text="Review Author: " 
+                                   Style="{StaticResource tbStyle}"/>
+                        <TextBlock Grid.Column="1" 
+                                   Grid.Row="5" 
+                                   TextWrapping="Wrap" 
+                                   Text="{Binding Name}" 
+                                   Style="{StaticResource tbStyle}"/>
+                    </Grid>
+                </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
     </Grid>

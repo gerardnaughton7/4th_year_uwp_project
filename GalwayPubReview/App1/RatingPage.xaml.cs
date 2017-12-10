@@ -27,33 +27,25 @@ namespace App1
             this.InitializeComponent();
         }
 
+        // set bev rating
         private void Bev_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            Slider slider = sender as Slider;
-            if (slider != null)
-            {
-                GlobalVars._bRate = (int)slider.Value;
-            }
+            GlobalVars._bRate = (int)Bev.Value;
         }
 
+        // set atmosphere rating
         private void Atmos_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            Slider slider = sender as Slider;
-            if (slider != null)
-            {
-                GlobalVars._aRate = (int)slider.Value;
-            }
+            GlobalVars._aRate = (int)Atmos.Value;
         }
 
+        // set craic rating
         private void Craic_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            Slider slider = sender as Slider;
-            if (slider != null)
-            {
-                GlobalVars._cRate = (int)slider.Value;
-            }
+            GlobalVars._cRate = (int)Craic.Value;
         }
 
+        // of clicked navigate to next step yourReview
         private void Step2_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(YourReviewPage));

@@ -27,21 +27,22 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="MaxHeight" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="TextAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="FontWeight" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Style" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Name" />
-      <RootProperty Name="Visibility" />
-      <RootProperty Name="Height" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Width" />
-      <RootProperty Name="MaxWidth" />
-      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Flyout" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
@@ -50,25 +51,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Name" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Flyout" />
-      <RootProperty Name="Padding" />
-      <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Control">
-      <RootProperty Name="Background" />
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="BorderThickness" />
-      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
@@ -92,12 +74,29 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="Name" />
+      <RootEvent Name="Navigated" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="MaxWidth" />
     </RootType>
     <RootType FullName="App1.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">

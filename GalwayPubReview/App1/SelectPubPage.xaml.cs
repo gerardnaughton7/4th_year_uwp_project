@@ -28,7 +28,7 @@ namespace App1
             this.InitializeComponent();
         }
 
-        //Use f12 to create click stub
+        //Select pub from list of menu flyout item
         private void Pub_Click(object sender, RoutedEventArgs e)
         {
 
@@ -37,6 +37,7 @@ namespace App1
             displayResult();
         }
 
+        // function if nothing is selected display no pub selected if a pub is selected show chosen pub
         private void displayResult()
         {   
             if(string.IsNullOrEmpty(GlobalVars._pub))
@@ -47,6 +48,7 @@ namespace App1
             ResultTextBlock.Text = GlobalVars._pub;
         }
 
+        // navigate to next step pub rating
         private void Step1_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(RatingPage));

@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B64526299EFB2CA919871481394B41BD76395CEE229A25160E201855F7A0FCC4</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>49AB15EDB58DC605230EFBB797D36555776D7C2C564406CC0E14BEE152A42043</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>dac68789-adc3-49a9-a119-e826aea695c1_1.0.0.0_x86__ddft8mdpadgaw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>dac68789-adc3-49a9-a119-e826aea695c1_ddft8mdpadgaw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>dac68789-adc3-49a9-a119-e826aea695c1</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T14:06:38.187</Modified>
+      <Modified>2017-12-10T21:40:40.365</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\App1.exe">
       <PackagePath>entrypoint\App1.exe</PackagePath>
-      <Modified>2017-12-08T14:06:37.321</Modified>
+      <Modified>2017-12-10T20:55:13.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\.nuget\packages\microsoft.csharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -531,6 +531,31 @@
       <PackagePath>Assets\background3.jpg</PackagePath>
       <Modified>2017-11-30T16:33:16.316</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.474</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.778</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\list-icon.png">
       <PackagePath>Assets\list-icon.png</PackagePath>
       <Modified>2017-11-30T16:09:23.317</Modified>
@@ -551,6 +576,181 @@
       <PackagePath>Assets\rating-icon.png</PackagePath>
       <Modified>2017-11-30T16:09:23.317</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.019</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.037</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.054</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.072</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.100</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:05.025</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:05.112</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:05.174</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:05.585</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.133</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.151</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.246</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.936</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.998</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.969</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.981</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.875</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.887</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.926</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.899</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.912</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:05.597</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:05.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:05.630</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:05.647</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:05.685</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.264</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.293</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.313</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-12-10T20:38:04.442</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-10-10T08:31:39.126</Modified>
@@ -558,32 +758,27 @@
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-10T08:31:39.126</Modified>
+      <Modified>2017-12-10T20:38:05.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-10T08:31:39.126</Modified>
+      <Modified>2017-12-10T20:38:04.191</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-10T08:31:39.126</Modified>
+      <Modified>2017-12-10T20:38:04.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-10T08:31:39.126</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-10T08:31:39.126</Modified>
+      <Modified>2017-12-10T20:38:04.948</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-10T08:31:39.126</Modified>
+      <Modified>2017-12-10T20:38:04.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -591,7 +786,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\App1.xr.xml">
       <PackagePath>App1.xr.xml</PackagePath>
-      <Modified>2017-12-08T14:06:37.149</Modified>
+      <Modified>2017-12-10T16:49:26.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -600,11 +795,11 @@
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T14:06:37.997</Modified>
+      <Modified>2017-12-10T21:40:40.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x86\Debug\Core\App1.exe">
       <PackagePath>App1.exe</PackagePath>
-      <Modified>2017-12-08T14:06:38.182</Modified>
+      <Modified>2017-12-10T21:40:40.354</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

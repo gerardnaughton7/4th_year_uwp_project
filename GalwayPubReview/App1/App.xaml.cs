@@ -7,6 +7,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -57,6 +58,7 @@ namespace App1
 
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
+
             }
 
             if (e.PrelaunchActivated == false)
@@ -96,5 +98,7 @@ namespace App1
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+
     }
 }

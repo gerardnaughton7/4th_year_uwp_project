@@ -31,30 +31,32 @@ namespace App1
 
         }
 
+        // when navigated to this page take in reviews from database and output in listbox
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             HttpClient client = new HttpClient();
-            var JsonResponse = await client.GetStringAsync("http://localhost:63030/api/Reviews");
-            //var JsonResponse = await client.GetStringAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews");
+            var JsonResponse = await client.GetStringAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews");
             var reviewResult = JsonConvert.DeserializeObject<List<Review>>(JsonResponse);
             reviewResult.Reverse();
             reviewList.ItemsSource = reviewResult;
         }
 
+        // observe if query is submitted from search box
         private void SearchBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
             SearchQuery(args.QueryText);
         }
 
+        // Search query method
         private async void SearchQuery(string queryText)
         {
-            Debug.WriteLine(queryText);
+            // search database for pub that was entered
             HttpClient client = new HttpClient();
-            var JsonResponse = await client.GetStringAsync("http://localhost:63030/api/Reviews");
-            //var JsonResponse = await client.GetStringAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews");
+            var JsonResponse = await client.GetStringAsync("http://reviewwebapp20171205092533.azurewebsites.net/api/Reviews");
             var reviewResult = JsonConvert.DeserializeObject<List<Review>>(JsonResponse);
             bool match = false;
             List<Review> searchResult = new List<Review>();
+            //loop through reviews to see if there is a match for that pub and add it to a list of matched reviews
             foreach (var r in reviewResult)
             {
                 if(r.Pub.ToLower() == queryText.ToLower())
@@ -64,19 +66,21 @@ namespace App1
                 }
             }
 
+            // if match is equal to true show the seach results
             if(match == true)
             {
                 searchList.Visibility = Visibility.Visible;
                 reviewList.Visibility = Visibility.Collapsed;
                 searchList.ItemsSource = searchResult;
             }
-            else
+            else// if no match found show error message
             {
                 errorMessage.Visibility = Visibility.Visible;
             }
 
         }
 
+        // if search query box is empty cancel search and show list of reviews
         private void SearchBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         {
             if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)

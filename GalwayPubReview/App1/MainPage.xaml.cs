@@ -21,27 +21,32 @@ namespace App1
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
             this.InitializeComponent();
             MyFrame.Navigate(typeof(PubReviewsPage));
         }
 
+        // Navigate to pubReview page
         private void PubReviewsButton_Click(object sender, RoutedEventArgs e)
         {
             MyFrame.Navigate(typeof(PubReviewsPage));
         }
 
+        // navigate to select pub page
         private void SelectPubButton_Click(object sender, RoutedEventArgs e)
         {
             MyFrame.Navigate(typeof(SelectPubPage));
         }
 
+        //navigate to ratings page
         private void RatingButton_Click(object sender, RoutedEventArgs e)
         {
             MyFrame.Navigate(typeof(RatingPage));
         }
 
+        //navigate to your review page
         private void YourReviewButton_Click(object sender, RoutedEventArgs e)
         {
             MyFrame.Navigate(typeof(YourReviewPage));
