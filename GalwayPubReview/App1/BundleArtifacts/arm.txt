@@ -1,0 +1,6 @@
+MainPackage=C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\ARM\Release\GPReview_1.1.0.0_ARM.appx
+SymbolPackage=C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\AppPackages\GPReview_1.1.0.0_Test\GPReview_1.1.0.0_ARM.appxsym
+ResourcePack=C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\ARM\Release\GPReview_1.1.0.0_scale-100.appx
+ResourcePack=C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\ARM\Release\GPReview_1.1.0.0_scale-125.appx
+ResourcePack=C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\ARM\Release\GPReview_1.1.0.0_scale-150.appx
+ResourcePack=C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\ARM\Release\GPReview_1.1.0.0_scale-400.appx

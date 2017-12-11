@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="dac68789-adc3-49a9-a119-e826aea695c1" Publisher="CN=gerar" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="dac68789-adc3-49a9-a119-e826aea695c1" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="37245CarlowProductions.GalwayPubReview" Publisher="CN=2E756599-6596-4FC7-9CB9-91D0CD08B36E" Version="1.1.0.0" />
+  <mp:PhoneIdentity PhoneProductId="af86dbc5-245f-4af3-9241-09b1fb5bdbd1" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>App1</DisplayName>
+    <DisplayName>GalwayPubReview</DisplayName>
     <PublisherDisplayName>Carlow Productions</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>

@@ -1,0 +1,2 @@
+MainPackage=C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x64\Release\Upload\GPReview_1.1.0.0_x64.appx
+SymbolPackage=C:\Users\gerar\Desktop\4th_year_uwp_project\GalwayPubReview\App1\bin\x64\Release\Upload\GPReview_1.1.0.0\GPReview_1.1.0.0_x64.appxsym
