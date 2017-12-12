@@ -78,7 +78,7 @@ actions on the ViewModel to get the job done.
 
 ## Learning Curve
 
-I Learned a great deal on this project. Especially with cross platform design and how a well thought out project can help. Using grids and visual state manager it allows you to use your application over a wide array of devices with a better user interface. Also this was my first time working with azure. I used Azure cloud service to host a mysql database with a table for holding my users reviews. As with a every new technology it took a while to get use too but quickly learned  
+I Learned a great deal on this project. Especially with cross platform design and how a well thought out project can help. Using grids and visual state manager it allows you to use your application over a wide array of devices with a better user interface. Also this was my first time working with azure. I used Azure cloud service to host a mysql database with a table for holding my users reviews. As with every new technology it took a while to get use too but quickly learned this was a powerful tool and was good to have gained some experience with it.  
 
 ## References
 
