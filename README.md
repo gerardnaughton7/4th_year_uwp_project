@@ -44,9 +44,21 @@ UWP stand for Universal Windows Platform. It provides a common app platform for 
 
 Azure is a comprehensive set of cloud services that developers and IT professionals use to build, deploy, and manage applications through our global network of datacenters. Integrated tools, DevOps, and a marketplace support you in efficiently building anything from simple mobile apps to internet-scale solutions. For my UWP application i use a Azure cloud service to host a mysql database to store my users reviews.
 
+## What is MVVM
+
+MVVM stands for Model, View and View Model. MVVM is a software architectural pattern. MVVM facilitates a separation of development of the graphical user interface.
+
+1. Model
+The Model represents the actual data that we are dealing with. An example of a model would be a contact(containing name, phone number, address). 
+
+
 ## Learning Curve
 
 I Learned a great deal on this project. Especially with cross platform design and how a well thought out project can help. Using grids and visual state manager it allows you to use your application over a wide array of devices with a better user interface. Also this was my first time working with azure. I used Azure cloud service to host a mysql database with a table for holding my users reviews. As with a every new technology it took a while to get use too but quickly learned  
 
 ## References
 
+* [Microsoft UWP](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide)
+* [Azure](https://docs.microsoft.com/en-us/azure/) 
+* [MVVM](https://msdn.microsoft.com/en-us/library/hh848246.aspx)
+* [Tutorials from MSDN Channel9](https://channel9.msdn.com/Series/Windows-10-development-for-absolute-beginners)
